@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+   
+  <div class="popup-container">
+    <div class="extra-buttons">
+        <button id="describeExtension" class="btn info-btn" title="About Extension">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1 4h-2v8h2V9z" />
+          </svg>
+        </button>
+        <button id="linkGithub" class="btn github-btn" title="Source Code">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.867 8.167 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.603-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.46-1.11-1.46-.908-.62.07-.607.07-.607 1.004.07 1.53 1.033 1.53 1.033.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.34-2.22-.252-4.555-1.112-4.555-4.947 0-1.093.39-1.988 1.03-2.689-.103-.253-.446-1.268.098-2.644 0 0 .84-.27 2.75 1.026A9.565 9.565 0 0 1 12 6.843c.85.004 1.704.114 2.5.333 1.91-1.296 2.75-1.026 2.75-1.026.544 1.376.2 2.391.098 2.644.64.701 1.03 1.596 1.03 2.689 0 3.845-2.339 4.692-4.566 4.938.359.31.678.923.678 1.86 0 1.344-.012 2.43-.012 2.76 0 .268.18.578.688.48A10.011 10.011 0 0 0 22 12c0-5.523-4.477-10-10-10z" />
+          </svg>
+        </button>
+        <h1  class="btn github-btn">Audio Resumer</h1>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none"> 
+        <!-- Bar 1 -->
+        <rect x="20" y="80" width="10" height="0" fill="black" rx="5" ry="5">
+            <animate attributeName="height" from="0" to="20" dur="1s" fill="freeze" />
+            <animate attributeName="y" from="80" to="60" dur="1s" fill="freeze" />
+        </rect>
+    
+        <!-- Bar 2 -->
+        <rect x="45" y="80" width="10" height="0" fill="black" rx="5" ry="5">
+            <animate attributeName="height" from="0" to="60" dur="1s" fill="freeze" />
+            <animate attributeName="y" from="80" to="20" dur="1s" fill="freeze" />
+        </rect>
+    
+        <!-- Bar 3 -->
+        <rect x="70" y="80" width="10" height="0" fill="black" rx="5" ry="5">
+            <animate attributeName="height" from="0" to="40" dur="1s" fill="freeze" />
+            <animate attributeName="y" from="80" to="40" dur="1s" fill="freeze" />
+        </rect>
+    </svg>
+    
+      
+      
+    <h1 class="description">Manage controlled tab:</h1>
+    <div class="info-container">
+      <div id="controlledTabInfo" class="info-box">
+        <p id="controlledTabName" class="tab-name">None</p>
+      </div>
+      <button id="goToTab" class="btn go-btn" title="Go to Controlled Tab">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+    <div class="buttons">
+        <button id="setTab" class="btn set-btn" title="Set Controlled Tab">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 16.2l-4.2-4.2L3 13.8 9 20l12-12-1.8-1.8L9 16.2z" fill="currentColor" />
+            </svg>
+            Set Tab
+          </button>
+          <button id="clearTab" class="btn clear-btn" title="Clear Controlled Tab">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M6 18L18 6M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+            Clear Tab
+          </button>
+        
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

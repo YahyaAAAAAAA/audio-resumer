@@ -1,0 +1,177 @@
+:root {
+  --green: #b0dc82;
+  --green2: #ceff99;
+  --black: #252525;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+  }
+  
+  /* Popup Container */
+  .popup-container {
+    text-align: center;
+    padding: 20px;
+    background: var(--green);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  }
+  
+  
+  /* Title Styles */
+  .title {
+    font-size: 1.5rem;
+    color: var(--black);
+  }
+  
+  /* Description */
+  .description {
+    font-size: 1rem;
+    color: var(--black);
+  }
+  
+  /* Info Box */
+  .info-box {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var( --green2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  /* Info Container with Navigation Button */
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .go-btn {
+    background-color: var(--black);
+    color: var(--green);
+    padding: 5px;
+  }
+  
+  
+  .go-btn:hover {
+    background-color: var(--black);
+    transform: scale(1.1);
+  }
+  
+  .go-btn:active {
+    transform: scale(0.9);
+  }
+  
+/* Truncated Tab Name */
+.tab-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--black);
+    animation: fadeIn 0.5s ease-in-out;
+    white-space: nowrap;      /* Prevent wrapping */
+    overflow: hidden;         /* Hide overflowed content */
+    text-overflow: ellipsis;  /* Add ellipsis for long text */
+    max-width: 200px;         /* Limit the width */
+    margin: 0 auto;           /* Center the text */
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between icon and text */
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+
+/* Buttons with SVG Icons */
+.extra-buttons  {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0px;
+    font-size: 0rem;
+    color: var(--black);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .info-btn {
+    color: var(--black);
+    background-color: var(--green);
+  }
+  
+  .github-btn {
+    background-color: var(--green);
+    color: var(--black);
+  }
+  
+  .info-btn:hover, .github-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn .icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor; /* Match button text color */
+  }
+  
+  .info-btn:active, .github-btn:active {
+    transform: scale(0.95);
+  }
+
+  .set-btn {
+    background-color: var(--black);
+    color: var(--green);
+  }
+  
+  .clear-btn {
+    background-color: var(--black);
+    color: var(--green);
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+    /* background-color: #333333; */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
