@@ -71,7 +71,7 @@ function manageAudio() {
               const { paused } = results[0].result;
 
               // Update the icon based on the paused state
-              const newIcon = paused ? "icon3.png" : "icon2.png";
+              const newIcon = paused ? "assets/icon3.png" : "assets/icon2.png";
               chrome.action.setIcon({ path: newIcon } );
             }
           }

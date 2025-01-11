@@ -29,10 +29,16 @@ document.getElementById("describeExtension").addEventListener("click", () => {
   
   // Open GitHub link in a new tab
   document.getElementById("linkGithub").addEventListener("click", () => {
-    const githubUrl = "https://github.com/YahyaAAAAAAA"; 
+    const githubUrl = "https://github.com/YahyaAAAAAAA/AudioResumerExtension"; 
     chrome.tabs.create({ url: githubUrl });
   });
   
+    // Open Website link in a new tab
+    document.getElementById("websiteLink").addEventListener("click", () => {
+      const githubUrl = "https://portfoliowebapp.github.io/Portfolio/"; 
+      chrome.tabs.create({ url: githubUrl });
+    });
+
 
 // Navigate to the controlled tab
 document.getElementById("goToTab").addEventListener("click", () => {
