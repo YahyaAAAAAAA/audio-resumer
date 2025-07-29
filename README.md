@@ -29,7 +29,7 @@
 
 ###
 
-<h2 align="left">👋 Introduction</h2>
+<h2 align="left">🟢 Introduction</h2>
 
 ###
 
@@ -37,26 +37,20 @@
 
 ###
 
-<h2 align="left">🔗 Usage</h2>
+<h2 align="left">🟢 Usage</h2>
 
 <p align="left">1- Click on the extension icon in the Chrome toolbar.<br>2- Select a tab to control by clicking the "Set Tab" button.<br>3- The selected tab will play audio unless another tab starts playing audio.<br>4- Use the "Clear Tab" button to remove the controlled tab.<br>5- Jump to the controlled tab with the provided button in the popup.</p>
 
 ###
 
-<h2 align="left">🚀 Download AudioResumer</h2>
+<h2 align="left">🟢 Download</h2>
 
 <p align="left">1- Clone or download this repository.<br>2- Open Chrome and navigate to chrome://extensions/.<br>3- Enable Developer Mode (toggle in the top-right corner).
 <br>4- Click Load unpacked and select the extension folder.<br>5- The extension will now appear in your Chrome extensions bar.</p>
 
 ###
 
-<h2 align="left">🔨 Future Enhancements</h2>
-
-<p align="left">• Availability for more browsers.</p>
-
-###
-
-<h2 align="left">📬 Contact</h2>
+<h2 align="left">🟢 Contact</h2>
 
 <p align="left">• Email: yahya.amarneh73@gmail.com</p>
 
